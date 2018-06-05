@@ -9,15 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var signBtn: UIButton!
+    @IBOutlet weak var houseLbl: UILabel!
+    @IBOutlet weak var signUpView: UIView!
+    @IBOutlet weak var logBtn: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func signUpB(sender: UIButton){
+        signBtn.isHidden = true
+        logBtn.isHidden = true
+        houseLbl.isHidden = true
+        signUpView.isHidden = false
     }
 
 
