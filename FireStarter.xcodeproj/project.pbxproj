@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D821E3435AB670C446CCBB4 /* Pods_HouseParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB37B1A754A884F8B3BE6995 /* Pods_HouseParty.framework */; };
 		F626E45020C5CF2E00D19C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626E44F20C5CF2E00D19C13 /* AppDelegate.swift */; };
 		F626E45220C5CF2E00D19C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626E45120C5CF2E00D19C13 /* ViewController.swift */; };
 		F626E45520C5CF2E00D19C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F626E45320C5CF2E00D19C13 /* Main.storyboard */; };
 		F626E45720C5CF2F00D19C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F626E45620C5CF2F00D19C13 /* Assets.xcassets */; };
 		F626E45A20C5CF2F00D19C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F626E45820C5CF2F00D19C13 /* LaunchScreen.storyboard */; };
+		F6BE906D20C84CF700616EAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6BE906C20C84CF700616EAB /* GoogleService-Info.plist */; };
+		F6BE906F20C84D0400616EAB /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6BE906E20C84D0400616EAB /* credentials.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F626E44C20C5CF2E00D19C13 /* HouseParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EB72420E06965B0EC48CBB /* Pods-HouseParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty.release.xcconfig"; sourceTree = "<group>"; };
+		AB37B1A754A884F8B3BE6995 /* Pods_HouseParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76652BD9BF355F9D5351D9F /* Pods-HouseParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty.debug.xcconfig"; sourceTree = "<group>"; };
+		F626E44C20C5CF2E00D19C13 /* FireStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F626E44F20C5CF2E00D19C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F626E45120C5CF2E00D19C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F626E45420C5CF2E00D19C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F626E45620C5CF2F00D19C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F626E45920C5CF2F00D19C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F626E45B20C5CF2F00D19C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BE906C20C84CF700616EAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6BE906E20C84D0400616EAB /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../Downloads/credentials.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,59 +37,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D821E3435AB670C446CCBB4 /* Pods_HouseParty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BFFEFFA82449F415D4DBCDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB37B1A754A884F8B3BE6995 /* Pods_HouseParty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829EA3EAA9B7F9EB859C1D40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E76652BD9BF355F9D5351D9F /* Pods-HouseParty.debug.xcconfig */,
+				16EB72420E06965B0EC48CBB /* Pods-HouseParty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F626E44320C5CF2E00D19C13 = {
 			isa = PBXGroup;
 			children = (
-				F626E44E20C5CF2E00D19C13 /* HouseParty */,
+				F626E44E20C5CF2E00D19C13 /* FireStarter */,
 				F626E44D20C5CF2E00D19C13 /* Products */,
+				829EA3EAA9B7F9EB859C1D40 /* Pods */,
+				5BFFEFFA82449F415D4DBCDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F626E44D20C5CF2E00D19C13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F626E44C20C5CF2E00D19C13 /* HouseParty.app */,
+				F626E44C20C5CF2E00D19C13 /* FireStarter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F626E44E20C5CF2E00D19C13 /* HouseParty */ = {
+		F626E44E20C5CF2E00D19C13 /* FireStarter */ = {
 			isa = PBXGroup;
 			children = (
 				F626E44F20C5CF2E00D19C13 /* AppDelegate.swift */,
 				F626E45120C5CF2E00D19C13 /* ViewController.swift */,
 				F626E45320C5CF2E00D19C13 /* Main.storyboard */,
+				F6BE906E20C84D0400616EAB /* credentials.plist */,
+				F6BE906C20C84CF700616EAB /* GoogleService-Info.plist */,
 				F626E45620C5CF2F00D19C13 /* Assets.xcassets */,
 				F626E45820C5CF2F00D19C13 /* LaunchScreen.storyboard */,
 				F626E45B20C5CF2F00D19C13 /* Info.plist */,
 			);
-			path = HouseParty;
+			path = FireStarter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F626E44B20C5CF2E00D19C13 /* HouseParty */ = {
+		F626E44B20C5CF2E00D19C13 /* FireStarter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F626E45E20C5CF2F00D19C13 /* Build configuration list for PBXNativeTarget "HouseParty" */;
+			buildConfigurationList = F626E45E20C5CF2F00D19C13 /* Build configuration list for PBXNativeTarget "FireStarter" */;
 			buildPhases = (
+				8693823E8D1CE9C439E2219B /* [CP] Check Pods Manifest.lock */,
 				F626E44820C5CF2E00D19C13 /* Sources */,
 				F626E44920C5CF2E00D19C13 /* Frameworks */,
 				F626E44A20C5CF2E00D19C13 /* Resources */,
+				82F79BE8D4BB46542EE8DA67 /* [CP] Embed Pods Frameworks */,
+				16660295B4A13C780AB45BA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HouseParty;
+			name = FireStarter;
 			productName = HouseParty;
-			productReference = F626E44C20C5CF2E00D19C13 /* HouseParty.app */;
+			productReference = F626E44C20C5CF2E00D19C13 /* FireStarter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F626E44720C5CF2E00D19C13 /* Build configuration list for PBXProject "HouseParty" */;
+			buildConfigurationList = F626E44720C5CF2E00D19C13 /* Build configuration list for PBXProject "FireStarter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F626E44B20C5CF2E00D19C13 /* HouseParty */,
+				F626E44B20C5CF2E00D19C13 /* FireStarter */,
 			);
 		};
 /* End PBXProject section */
@@ -123,12 +156,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				F626E45A20C5CF2F00D19C13 /* LaunchScreen.storyboard in Resources */,
+				F6BE906D20C84CF700616EAB /* GoogleService-Info.plist in Resources */,
+				F6BE906F20C84D0400616EAB /* credentials.plist in Resources */,
 				F626E45720C5CF2F00D19C13 /* Assets.xcassets in Resources */,
 				F626E45520C5CF2E00D19C13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16660295B4A13C780AB45BA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F79BE8D4BB46542EE8DA67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8693823E8D1CE9C439E2219B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseParty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F626E44820C5CF2E00D19C13 /* Sources */ = {
@@ -278,10 +376,11 @@
 		};
 		F626E45F20C5CF2F00D19C13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76652BD9BF355F9D5351D9F /* Pods-HouseParty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HouseParty/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FireStarter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +394,11 @@
 		};
 		F626E46020C5CF2F00D19C13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16EB72420E06965B0EC48CBB /* Pods-HouseParty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HouseParty/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FireStarter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F626E44720C5CF2E00D19C13 /* Build configuration list for PBXProject "HouseParty" */ = {
+		F626E44720C5CF2E00D19C13 /* Build configuration list for PBXProject "FireStarter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F626E45C20C5CF2F00D19C13 /* Debug */,
@@ -322,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F626E45E20C5CF2F00D19C13 /* Build configuration list for PBXNativeTarget "HouseParty" */ = {
+		F626E45E20C5CF2F00D19C13 /* Build configuration list for PBXNativeTarget "FireStarter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F626E45F20C5CF2F00D19C13 /* Debug */,

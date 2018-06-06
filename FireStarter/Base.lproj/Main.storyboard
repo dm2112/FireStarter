@@ -30,48 +30,36 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.4945547173" green="0.45419324929999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-4b-LCi">
-                                        <rect key="frame" x="50" y="325" width="275" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rKk-MI-Q5C">
-                                        <rect key="frame" x="50" y="240" width="275" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" textContentType="username"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to HouseParty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyt-MQ-DEj">
-                                        <rect key="frame" x="33.5" y="85" width="309" height="36"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2P-TK-hfr" customClass="GIDSignInButton">
+                                        <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="yzJ-MZ-lHz"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyt-MQ-DEj">
+                                        <rect key="frame" x="52.5" y="85" width="271.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPJ-gy-Ecq">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPJ-gy-Ecq">
                                         <rect key="frame" x="118" y="388" width="140" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Get Started">
+                                        <state key="normal" title="Sign Out">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubh-Wo-a0q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.084436197491209453" green="1" blue="0.96495605021134345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.037429042764917875" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="fyt-MQ-DEj" firstAttribute="top" secondItem="VP1-eP-SgP" secondAttribute="top" constant="85" id="7d6-UT-UG4"/>
-                                    <constraint firstItem="fyt-MQ-DEj" firstAttribute="centerX" secondItem="rKk-MI-Q5C" secondAttribute="centerX" id="816-cO-LIM"/>
-                                    <constraint firstItem="rKk-MI-Q5C" firstAttribute="leading" secondItem="VP1-eP-SgP" secondAttribute="leading" constant="50" id="9Dk-9V-hcK"/>
-                                    <constraint firstItem="GPJ-gy-Ecq" firstAttribute="top" secondItem="3cg-4b-LCi" secondAttribute="bottom" constant="37" id="BGs-cd-p0T"/>
                                     <constraint firstItem="fyt-MQ-DEj" firstAttribute="centerX" secondItem="VP1-eP-SgP" secondAttribute="centerX" id="GUG-R5-vLu"/>
                                     <constraint firstAttribute="trailing" secondItem="GPJ-gy-Ecq" secondAttribute="trailing" constant="138" id="Mad-UP-Xhf"/>
-                                    <constraint firstItem="3cg-4b-LCi" firstAttribute="height" secondItem="rKk-MI-Q5C" secondAttribute="height" id="OcD-di-HaS"/>
-                                    <constraint firstAttribute="trailing" secondItem="rKk-MI-Q5C" secondAttribute="trailing" constant="50" id="UYE-N1-et9"/>
-                                    <constraint firstItem="3cg-4b-LCi" firstAttribute="leading" secondItem="rKk-MI-Q5C" secondAttribute="leading" id="adg-3O-iAs"/>
                                     <constraint firstAttribute="bottom" secondItem="GPJ-gy-Ecq" secondAttribute="bottom" constant="237" id="avA-bJ-jaV"/>
-                                    <constraint firstItem="3cg-4b-LCi" firstAttribute="width" secondItem="rKk-MI-Q5C" secondAttribute="width" id="jUR-d1-bKP"/>
-                                    <constraint firstItem="3cg-4b-LCi" firstAttribute="top" secondItem="rKk-MI-Q5C" secondAttribute="bottom" constant="55" id="kb4-Kg-hib"/>
-                                    <constraint firstItem="rKk-MI-Q5C" firstAttribute="top" secondItem="VP1-eP-SgP" secondAttribute="top" constant="240" id="mMM-25-iwG"/>
                                     <constraint firstItem="GPJ-gy-Ecq" firstAttribute="leading" secondItem="VP1-eP-SgP" secondAttribute="leading" constant="138" id="p58-Sw-Esv"/>
                                 </constraints>
                             </view>
@@ -113,6 +101,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="googBtn" destination="I2P-TK-hfr" id="5ZT-vV-lMk"/>
                         <outlet property="houseLbl" destination="e7x-XP-q4y" id="ijx-s3-Ila"/>
                         <outlet property="logBtn" destination="eoA-I3-xae" id="aJ3-YW-YZ8"/>
                         <outlet property="signBtn" destination="xjl-mq-8kM" id="WP5-z2-RAV"/>
