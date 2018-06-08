@@ -7,9 +7,11 @@
 //
 
 import UIKit
-import GoogleSignIn 
+import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class ViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var signBtn: UIButton!
     @IBOutlet weak var houseLbl: UILabel!
@@ -20,17 +22,19 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
+        
+        let LoginBtn = FBSDKLoginButton()
+        view.addSubview(LoginBtn)
+        LoginBtn.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
+        
+        LoginBtn.delegate = self
         // Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()
         
-        // TODO(developer) Configure the sign-in button look/feel
-        // ...
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
     
+    }
+    
+
     @IBAction func signUpB(sender: UIButton){
         signBtn.isHidden = true
         logBtn.isHidden = true
@@ -42,6 +46,19 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBAction func didTapSignOut(_ sender: UIButton) {
         GIDSignIn.sharedInstance().signOut()
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("did log out of FaceBook")
+    }
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            print(error)
+            return
+        }
+        
+        print("Succesfully Logged in with facebook")
+        
     }
 
 

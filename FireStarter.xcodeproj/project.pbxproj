@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D821E3435AB670C446CCBB4 /* Pods_HouseParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB37B1A754A884F8B3BE6995 /* Pods_HouseParty.framework */; };
+		3F6367924FB07AAC86201176 /* Pods_FireStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22D08A4C5523BBDD8B690E5 /* Pods_FireStarter.framework */; };
 		F626E45020C5CF2E00D19C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626E44F20C5CF2E00D19C13 /* AppDelegate.swift */; };
 		F626E45220C5CF2E00D19C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626E45120C5CF2E00D19C13 /* ViewController.swift */; };
 		F626E45520C5CF2E00D19C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F626E45320C5CF2E00D19C13 /* Main.storyboard */; };
@@ -19,7 +20,10 @@
 
 /* Begin PBXFileReference section */
 		16EB72420E06965B0EC48CBB /* Pods-HouseParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty.release.xcconfig"; sourceTree = "<group>"; };
+		1BEA21B35B9ECD63EBB98A8C /* Pods-FireStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireStarter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireStarter/Pods-FireStarter.release.xcconfig"; sourceTree = "<group>"; };
+		94A35CADD3D1CDE2ECB3A49A /* Pods-FireStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireStarter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireStarter/Pods-FireStarter.debug.xcconfig"; sourceTree = "<group>"; };
 		AB37B1A754A884F8B3BE6995 /* Pods_HouseParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22D08A4C5523BBDD8B690E5 /* Pods_FireStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76652BD9BF355F9D5351D9F /* Pods-HouseParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty.debug.xcconfig"; sourceTree = "<group>"; };
 		F626E44C20C5CF2E00D19C13 /* FireStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F626E44F20C5CF2E00D19C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D821E3435AB670C446CCBB4 /* Pods_HouseParty.framework in Frameworks */,
+				3F6367924FB07AAC86201176 /* Pods_FireStarter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				AB37B1A754A884F8B3BE6995 /* Pods_HouseParty.framework */,
+				D22D08A4C5523BBDD8B690E5 /* Pods_FireStarter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -57,6 +63,8 @@
 			children = (
 				E76652BD9BF355F9D5351D9F /* Pods-HouseParty.debug.xcconfig */,
 				16EB72420E06965B0EC48CBB /* Pods-HouseParty.release.xcconfig */,
+				94A35CADD3D1CDE2ECB3A49A /* Pods-FireStarter.debug.xcconfig */,
+				1BEA21B35B9ECD63EBB98A8C /* Pods-FireStarter.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -172,7 +180,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-FireStarter/Pods-FireStarter-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -181,7 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireStarter/Pods-FireStarter-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82F79BE8D4BB46542EE8DA67 /* [CP] Embed Pods Frameworks */ = {
@@ -190,7 +198,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-FireStarter/Pods-FireStarter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -198,6 +209,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -205,7 +219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseParty/Pods-HouseParty-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireStarter/Pods-FireStarter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8693823E8D1CE9C439E2219B /* [CP] Check Pods Manifest.lock */ = {
@@ -219,7 +233,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HouseParty-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FireStarter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -376,7 +390,7 @@
 		};
 		F626E45F20C5CF2F00D19C13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E76652BD9BF355F9D5351D9F /* Pods-HouseParty.debug.xcconfig */;
+			baseConfigurationReference = 94A35CADD3D1CDE2ECB3A49A /* Pods-FireStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,7 +408,7 @@
 		};
 		F626E46020C5CF2F00D19C13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16EB72420E06965B0EC48CBB /* Pods-HouseParty.release.xcconfig */;
+			baseConfigurationReference = 1BEA21B35B9ECD63EBB98A8C /* Pods-FireStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
